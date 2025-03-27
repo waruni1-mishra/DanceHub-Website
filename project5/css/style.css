@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 40%;
+    border: 3px solid rgb(131, 127, 127);
+    border-radius: 50px;
+
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    cursor: pointer;
+    
+}
+ .nav-list{
+     width: 70%;
+     /* background-color: rgb(168, 168, 230);  */
+     align-items: center;
+     display: flex;
+
+ }
+ .nav-list li{
+     list-style: none;
+     padding: 26px 30px;
+
+ }
+ .nav-list li a{
+
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+   font-family:'Ubuntu', sans-serif; ;
+ }
+ .nav-list li a:hover{
+
+    text-decoration: none;
+    color: rgb(121, 117, 117);
+    border-radius: 2px;
+  }
+ .rightNav{
+    width: 30%;
+    /* background-color: aquamarine; */
+    text-align: right;
+    padding:0 23px;
+ }
+ #Search{
+     padding: 5px;
+     font-size: 17px;
+     border: 2px solid black;
+     border-radius: 9px;
+ }
+ .background{
+     background:rgba(0, 0, 0, 0.7) url(/building.jpg);
+     background-size: cover;
+     background-blend-mode:darken;
+ }
+ .box-main{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     max-width: 50%;
+     margin: auto;
+     height: 70%;
+ }
+ .firssection{
+     height: 100vh;
+ }
+ .firsthalf{
+     width: 75%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
+ }
+ .secondhalf{
+     width: 30%;
+     
+
+ }
+ .secondhalf img{
+  width: 83%;
+  border: 3px solid rgb(14, 13, 13);
+  border-radius: 100px;
+  margin:auto;
+}
+.text-big{
+font-size: 30px;
+
+}
+.text-small{
+font-size: 18px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background:none;
+    color: bisque;
+    cursor: pointer;
+    font-size: medium;
+    font-family:  'Ubuntu', sans-serif;
+
+}
+.btn-sm{
+  padding: 5px 10px;
+  vertical-align: middle;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+    
+}
+.section{
+    /* height: 440px; */
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.section-Left{
+  flex-direction: row-reverse;
+}
+.paras{
+    padding: 0px 65px;
+}
+.sectionTag{
+    padding: 16px 0px;
+}
+.subsectionTag{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.thumbnail img{
+   border: 2px solid black;
+   border-radius: 26px;
+   margin-top:19px ;
+}
+.contact{
+    background-color: rgb(255, 235, 235);
+    height: 560px;
+}
+.text-center{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 34px;
+}
+.form{
+    max-width: 62%;
+    margin:  25px auto;
+}
+.form-input{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 104%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+
+}
+.form-inpuT{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 104%;
+    height: 130px;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+
+
+}
+.text-footer{
+    text-align: center;
+    padding: 13px 2px; 
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.background{
+    color: aliceblue;
+}
+ 
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width: 1089px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 447px;
+        flex-direction: column;
+        transition: 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .btn{
+        text-align: center;
+    }
+}
